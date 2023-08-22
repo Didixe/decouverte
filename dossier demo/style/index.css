@@ -20,7 +20,7 @@
   .accueil-introduction {
     display: flex;
     flex-direction: row;
-    width: 60%;
+    max-width: 1000px;
     align-items: flex-start;
     margin: auto;
   }
@@ -47,7 +47,7 @@
   form{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    max-width: 1000px;
     margin: auto;
     color: white;
   }
@@ -80,4 +80,36 @@ textarea {
     color: white;
     border-radius: 50px;
     padding: 20px 30px;
+  }
+
+  @media screen and (max-width: 996px) {
+    .accueil-photos {
+      padding: 20px;
+    }
+    .accueil-introduction{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .accueil-introduction div{
+      padding-right: 0;
+      text-align: center;
+      order: 2;
+    }
+    .accueil-introduction img{
+      order: 1;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .accueil-photos div{
+      flex-direction: column;
+    }
+    .form-nom-email{
+      flex-direction: column;
+      gap: 0;
+    }
+    .section-contact {
+      padding: 50px 20px;
+    }
+  
   }

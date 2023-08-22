@@ -127,7 +127,7 @@ nav a {
 .accueil-introduction {
   display: flex;
   flex-direction: row;
-  width: 60%;
+  
   align-items: flex-start;
   margin: auto;
 }
@@ -196,3 +196,28 @@ nav a {
 .lien-conteneur-photo:hover .photo-hover {
   display: flex;
 }
+
+@media screen and (max-width: 996px) {
+  h1 {
+    font-size: 2em;
+  }
+  .accueil-introduction {
+    max-width: 1000px;
+  }
+  .a-propos {
+    display: table none;
+  }
+  .lien-icone {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header nav{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .form-nom-email{
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+

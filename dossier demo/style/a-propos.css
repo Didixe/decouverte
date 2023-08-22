@@ -43,3 +43,9 @@
   caption{
     margin-bottom: 80px;
   }
+
+  @media screen and (max-width: 996px) {
+    .section-tarifs {
+      display: none;
+    }
+  }
