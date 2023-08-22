@@ -44,8 +44,19 @@
     margin-bottom: 80px;
   }
 
+  h1{
+    text-align: center;
+  }
+
+  h2{
+    text-align: center;
+  }
+
   @media screen and (max-width: 996px) {
     .section-tarifs {
+      display: none;
+    }
+    .a-porpos-main img {
       display: none;
     }
   }
